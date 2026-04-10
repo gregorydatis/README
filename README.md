@@ -9,6 +9,8 @@
 - 3.1 [Machines Virtuelles](#31-machines-virtuelles)
 - 3.2 [Outils utilisés](#32-outils-utilisés)
 4. [Fonctionnalités du script](#4-fonctionnalites-du-script)
+  - 4.1 [Gestions des machines](#41-gestions-des-machines)
+  - 4.2 [Gestion des utilisateurs](#42-gestion-des-utilisateurs)
 ## 1. Description du projet
 
 Cet outil d'administration centralisée permet de gérer des utilisateurs et des machines Linux à distance via un Script Bash.
@@ -50,3 +52,26 @@ Les machines sont sur le meme réseau.
 ---
 
 ## 4. Fonctionnalités du script
+
+## 4.1 Gestions des machines
+
+| Option | Action | Commande SSH |
+|--------|--------|--------------|
+| 1 | Arreter la machine | `sudo shutdown now` |
+| 2 | Redémarrer la machine | `sudo reboot` |
+| 3 | Voir la version de l'OS | `cat /etc/os-release` |
+| 4 | Voir l'adresse IP | `hostname -I` |
+
+> les options Arret et Redémarrage néccessitent que `wilder` ait les droits sudo sans mot de passe sur CLILIN01.
+
+
+## 4.2 Gestion des utilisateurs 
+| Option | Action | Commande SSH |
+|--------|--------|--------------|
+| 1 | Créer utilisateur | `sudo adduser $NOM` |
+| 2 | Supprimer utilisateur | `sudo deluser $NOM` |
+| 3 | Modifier mot de passe | `sudo passwd $NOM` |
+| 4 | Voir deenière connexion | `last $NOM \| head -1` |
+| 5 | Voir dernier changement de mdp | `sudo chage -1 $NOM` |
+
+---
