@@ -24,6 +24,14 @@ Avant de lancer le script, vérifier :
 
 > Si la clé SSH n'est pas confu=iguée, regarder a l'**INSTALL.md**.
 
+> Si l'arrêt ou le redémarrage demande un mot de passe, exécuter sur **CLILIN01** :
+`sudo visudo`
+<img width="790" height="116" alt="wilder sudo vusio" src="https://github.com/user-attachments/assets/60ed7100-3db4-490d-a1bd-f5d192c985e2" />
+
+> Ajouter la ligne suivante à la fin du fichier :
+<img width="804" height="586" alt="config wilder sans mdp" src="https://github.com/user-attachments/assets/ab0c760d-c4be-4ecb-ace2-709782ce0ae6" />
+
+> wilder ALL=(ALL) NOPASSWD: /sbin/shutdown, /sbin/reboot
 ---
 
 ## 2. Lancement du script 
