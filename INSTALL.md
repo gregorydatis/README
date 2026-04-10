@@ -17,7 +17,7 @@
    - 5.1 [Générer une clé SSH](#51-générer-une-clé-ssh)
    - 5.2 [Copier clé vers CLILI01](#52-copier-clé-vers-clili01)
    - 5.3 [Tester la connexion](#53-tester-la-connexion)
-
+6. [Lancement du script](#6-lancement-du-script)
 ---
 
 ## 1. Prérequis techniques
@@ -209,3 +209,14 @@ ssh-copy-id -i ~/.ssh/id_ed22519.pub `wilder@172.16.50.30`
 <img width="722" height="245" alt="connexion établi" src="https://github.com/user-attachments/assets/3ae3cacb-181e-49d9-81fb-48e14d7c55fe" />
 
 > connexion sans demander de **mot de passe**
+
+## 6. Lancement du script
+
+Une fois l'infrastructure en place, lancer le script :
+
+```
+./script.sh
+```
+> Regarder le **USER_GUID.md** pour l'utilisation du script.
+
+---
