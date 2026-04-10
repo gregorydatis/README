@@ -8,7 +8,7 @@
 3. [Logiciels utilisées](#3-logiciels-utilisées)
 - 3.1 [Machines Virtuelles](#31-machines-virtuelles)
 - 3.2 [Outils utilisés](#32-outils-utilisés)
-
+4. [Fonctionnalités du script](#4-fonctionnalites-du-script)
 ## 1. Description du projet
 
 Cet outil d'administration centralisée permet de gérer des utilisateurs et des machines Linux à distance via un Script Bash.
@@ -48,3 +48,5 @@ Les machines sont sur le meme réseau.
 | Nano | Editer fichiers avec Terminal |
 
 ---
+
+## 4. Fonctionnalités du script
